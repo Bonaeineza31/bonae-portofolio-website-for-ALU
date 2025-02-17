@@ -292,6 +292,49 @@
   transform: scale(1.1);
  }
 
+
+ section {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.experience-item, .education-item, .project-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #eef;
+  border-left: 5px solid #222;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #ddd;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 95%;
+  }
+}
+
+
   
   /* Services Section */
   #services {
