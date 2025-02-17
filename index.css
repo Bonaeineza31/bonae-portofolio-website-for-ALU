@@ -137,12 +137,12 @@ html {
 
 .hero-image {
   position: relative;
-  animation: float 6s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 .hero-image img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 550px;
   border-radius: 30px;
   object-fit: cover;
   box-shadow: 0 32px 75px rgba(0, 0, 0, 0.15);
