@@ -157,6 +157,14 @@ html {
   flex-direction: column;
   align-items: center;
 }
+.about-content {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
 
 .section-title {
   font-size: 2.8rem;
@@ -183,8 +191,10 @@ html {
 
 
 .about-left {
-  flex: 1;
-  max-width: 60%;
+    flex: 1;
+    max-width: 40%;
+    /* margin-right: auto;  */
+    margin-left: -800px;
 }
 
 .about-left p {
@@ -214,7 +224,7 @@ html {
 
 .social-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 6rem;
   margin-top: 2rem;
 }
 
@@ -222,24 +232,27 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   transition: transform 0.3s ease;
 }
 
 .social-links a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-8px);
 }
 
 .social-links img {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
 .about-right {
   flex: 1;
   max-width: 35%;
+  margin-left: auto;
+  padding-right: 2rem;
+  margin-top: -500px;
 }
 
 .about-right h3 {
@@ -453,75 +466,6 @@ html {
 .education-item p {
   color: #555;
   line-height: 1.6;
-}
-
-/* Skills Section */
-.skills {
-  padding: 100px 5%;
-  background: #f8f9fa;
-}
-
-.skills-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.skills-category h3 {
-  font-size: 1.8rem;
-  color: #2d2e32;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.skill-item {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-}
-
-.skill-name {
-  display: block;
-  font-size: 1.1rem;
-  color: #2d2e32;
-  margin-bottom: 15px;
-  font-weight: 500;
-}
-
-.skill-bar {
-  height: 8px;
-  background: #e9ecef;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-}
-
-.skill-bar::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: var(--level);
-  background: linear-gradient(90deg, #4a90e2, #63a9ff);
-  border-radius: 4px;
-  animation: skillFill 1s ease forwards;
-}
-
-@keyframes skillFill {
-  from { width: 0; }
-  to { width: var(--level); }
 }
 
 
