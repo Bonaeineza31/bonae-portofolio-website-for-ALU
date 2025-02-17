@@ -1,244 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bonae Ineza - Portfolio</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonae Ineza - Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Defer JavaScript loading -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">
-     <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about"> About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <div class="contact-links">
-        <a href="mailto:bgisubizo31@gmail.com" class="contact-link">
-          <img src="image/email-1-svgrepo-com.svg" alt="Email Icon"> bgisubizo31@gmail.com
-        </a>
-        <a href="tel:+250794020088" class="contact-link">
-          <img src="image/phone-call-icon.svg" alt="Phone Icon"> +250794020088
-        </a>
-      </div>
-    </ul>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Bonae Ineza</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <main>
-      <section id="home" class="home">
-        <div class="home-left">
-          <h1>Hello Mate 👋</h1>
-          <h2>My name is Ineza Bonae</h2>
-          <h3>A <span class="highlight">JUNIOR SOFTWARE DEVELOPER</span></h3>
-          <p>
-            Hi, I’m Bonae, all the way from Kigali, Rwanda. I am a freelancer, web designer, and junior software developer. I deliver high-brand quality products.
-          </p>
-          <div class="home-buttons">
-            <a href="mailto:bgisubizo31@gmail.com?subject=Book%20a%20Call" class="btn">Book a Call</a>
-            <a href="https://docs.google.com/document/d/1i7OrAKMZ9bLy2i5O6zdFo5tCftf3jXFc/edit?usp=sharing&ouid=117609981714984292770&rtpof=true&sd=true" class="btn" target="_blank">Download CV</a>
-          </div>
-        </div>
-        <div class="home-right">
-          <img src="image/picture-removebg.png" alt="Bonae's Picture" class="profile-picture">
-          <div class="home-right-icons">
-            <div class="home-right-icons-left">
-              <img src="image/DALL·E 2024-12-21 22.06.46 - The Python logo, featuring a blue and yellow snake coiled into a yin-yang shape, placed on a plain white background. The design is clean, minimalistic.webp" alt="Python Logo">
-              <img src="image/DALL·E 2024-12-21 22.07.09 - The Visual Studio Code logo, featuring a blue ribbon-like shape forming an infinity loop, placed on a plain white background. The design is clean, min.webp" alt="JavaScript Logo">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello Mate 👋</h1>
+            <h2>I'm Bonae Ineza</h2>
+            <h3>A <span class="highlight">Junior Software Developer</span></h3>
+            <p>Based in Kigali, Rwanda, I specialize in creating beautiful and functional web experiences.</p>
+            <div class="cta-buttons">
+                <a href="mailto:bgisubizo31@gmail.com" class="btn primary">Contact Me</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
             </div>
-            <div class="home-right-icons-right">
-              <img src="image/DALL·E 2024-12-21 22.23.15 - The official logo of JavaScript_ a bold yellow square background with the black letters 'JS' in a modern and minimalistic font. The design should be c.webp" alt="VS Code Logo">
-              <img src="image/DALL·E 2024-12-21 22.23.21 - The official logo of Java_ a steaming coffee cup with three wavy steam lines, designed in blue and red colors, placed on a clean white background. The.webp" alt="Java Logo">
-            </div>
-          </div>
         </div>
-      </section>
+        <div class="hero-image">
+            <img src="profile-image.png" alt="Bonae Ineza">
+        </div>
+    </section>
 
-    <section id="about">
-     <div class="about-left">
-      <h2>About Me</h2>
-      <p>I’m a passionate Junior Software Developer with experience in building and maintaining websites, apps, and software solutions. My focus is on writing clean, efficient, and scalable code to solve real-world problems. Whether collaborating in a team or working independently, I bring enthusiasm and commitment to every project.</p>
-      <div class="about-details">
-        <div class="detail-item">
-          <p><strong>Name:</strong> Bonae Ineza</p>
-          <p><strong>Email:</strong> <a href="mailto:bgisubizo31@gmail.com">bgisubizo31@gmail.com</a></p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Motivated Junior Web Developer with strong attention to detail and a solid foundation in programming, computer systems, and networking. Proficient in technical support, system maintenance, and eager to learn new technologies.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span>Name:</span> Ineza Gisubizo Bonae
+                    </div>
+                    <div class="info-item">
+                        <span>Email:</span> bgisubizo31@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <span>Phone:</span> +250 794 020 088
+                    </div>
+                    <div class="info-item">
+                        <span>Location:</span> Kigali, Rwanda
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="detail-item">
-          <p><strong>Location:</strong> Kigali, Rwanda</p>
-          <p><strong>Office:</strong> Kigali</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Software Development Trainee</h3>
+                    <h4>Tekher Program, Kigali</h4>
+                    <p class="date">December 2024 - Present</p>
+                    <ul>
+                        <li>Selected for a specialized program for women in software development</li>
+                        <li>Gaining hands-on experience in web development (HTML, CSS, Figma)</li>
+                        <li>Learning advanced technologies such as React.js and Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Call Center Agent</h3>
+                    <h4>ALX Rwanda</h4>
+                    <p class="date">May 2024 - Present</p>
+                    <ul>
+                        <li>Assisting learners with platform navigation and problem-solving</li>
+                        <li>Ensuring a seamless learning experience for users</li>
+                        <li>Providing academic and practical solutions</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more experience items -->
         </div>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/bonae-gisubizo-82b8492b6" target="_blank">
-          <img src="image/Screenshot 2025-01-03 220439.png" alt="LinkedIn Icon">
-        </a>
-        <a href="https://github.com/Bonaeineza31" target="_blank">
-          <img src="image/github-mark.png" alt="GitHub Icon">
-        </a>
-        <a href="https://www.instagram.com/_i.n.e.z.a/" target="_blank">
-          <img src="image/—Pngtree—instagram icon_8704817.png" alt="Instagram Icon">
-        </a>
-      </div>
-    </div>
-    <div class="about-right">
-      <h3>Skills</h3>
-      <ul>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>Microsoft Office</li>
-        <li>Hardware/Software Maintenance</li>
-        <li>Trouble Shooting</li>
-        <li>Administrative Task</li>
-      </ul>
-    </div>
     </section>
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Junior Software Developer - Freelancer</h3>
-        <p><strong>Duration:</strong> 2023 - Present</p>
-        <p>Developing and maintaining websites, troubleshooting software issues, and ensuring optimal performance for clients.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Call Center Agent - ALX Rwanda</h3>
-        <p><strong>Duration:</strong> 2023</p>
-        <p>Assisted customers with inquiries, managed client issues, and improved call resolution times.</p>
-      </div>
-      <div class="experience-item">
-        <h3>Secretary - Pacemaker Educational & Languages Services</h3>
-        <p><strong>Duration:</strong> 2023 - Present</p>
-        <p>Provided administrative support, managed client documentation, and assisted students with exam registration.</p>
-      </div>
-    </section>
-    
+
     <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Software Engineering - African Leadership University</h3>
-        <p><strong>Expected Graduation:</strong> 2025</p>
-        <p>Focus on automation, robotics, and artificial intelligence.</p>
-      </div>
-      <div class="education-item">
-        <h3>High School Diploma - [Your High School Name]</h3>
-        <p><strong>Year:</strong> [Year of Graduation]</p>
-      </div>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="education-item">
+                <h3>Software Engineering</h3>
+                <h4>African Leadership University</h4>
+                <p class="date">Expected Graduation: 2025</p>
+                <p>Focus on automation, robotics, and artificial intelligence</p>
+            </div>
+            <div class="education-item">
+                <h3>Advanced Level (A2)</h3>
+                <h4>Ecole Des Science BYIMANA</h4>
+                <p class="date">2020 - 2023</p>
+                <p>National Secondary School Diploma</p>
+            </div>
+        </div>
     </section>
-    
-    <!-- Services Section -->
-    <section id="services">
-      <h2>My Expertise</h2>
-      <div class="service-cards">
-        <div class="card">
-          <h3>Freelancer</h3>
-          <p>Do you have a deadline but can't make it? I'm here to help.</p>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-level="90">
+                        <span class="skill-name">HTML</span>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div class="skill-item" data-level="85">
+                        <span class="skill-name">CSS</span>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <!-- Add more skills -->
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <h3>Web Designer</h3>
-          <p>Need help designing your dream website? Let's make it real.</p>
-        </div>
-        <div class="card">
-          <h3>Administrator Role</h3>
-          <p>I help in administrative task and ensure all tasks are handled well</p>
-        </div>
-      </div>
     </section>
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <!-- Shopping Website Project Card -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="image/Screenshot 2025-02-09 104452.png" alt="Shopping Website">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://bonaeineza-shoppingwebsite-b01666.netlify.app/" class="project-btn" target="_blank">View Live</a>
-                <a href="https://github.com/Bonaeineza31/Shopping-website" class="project-btn" target="_blank">Source Code</a>
-              </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="shopping-website.png" alt="E-Shopping Website">
+                <div class="project-info">
+                    <h3>E-Shopping Website</h3>
+                    <p>A modern e-commerce platform built with React</p>
+                    <div class="project-links">
+                        <a href="https://bonaeineza-shoppingwebsite-b01666.netlify.app/" class="btn" target="_blank">View Live</a>
+                        <a href="https://github.com/Bonaeineza31/Shopping-website" class="btn" target="_blank">Source Code</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="project-info">
-            <h3>E-Shopping Website</h3>
-            <p>A modern e-commerce platform built with React, featuring a responsive design, product catalog, shopping cart functionality, and seamless checkout experience.</p>
-            <div class="project-tech">
-              <span>React</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
+            <!-- Add more project cards -->
         </div>
-    
-        <!-- CT6 Learning Platform Project Card -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="image/Screenshot 2025-02-09 104700.png" alt="Project 1">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://ct6-digital.netlify.app/" class="project-btn" target="_blank">View Live</a>
-                <a href="https://github.com/Bonae31/CT-6.git" class="project-btn" target="_blank">Source Code</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>CT6</h3>
-            <p>Empowering youth through education and support. With developing technology, we aim to provide computer literacy skills to be kids under the age of 18.</p>
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
+
     <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Your Phone" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <div class="contact-info">
-        <p><strong>Instagram:</strong> Bonae Ineza</p>
-        <p><strong>Email:</strong> bgisubizo31@gmail.com</p>
-      </div>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
     </section>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Bonae Ineza. All Rights Reserved.</p>
-  </footer>
-  <div class="chatbot-container">
-    <button class="chat-toggle" onclick="toggleChat()">
-      <span class="chat-icon">💬</span>
-      <span class="close-icon">✕</span>
-    </button>
-    
-    <div class="chat-window">
-      <div class="chat-header">
-        <h4>Chat Support</h4>
-      </div>
-      
-      <div class="chat-messages" id="chatMessages">
-       
-      </div>
-      
-      <div class="chat-input-area">
-        <input type="text" id="userInput" placeholder="Type your message..." disabled>
-        <button onclick="sendMessage()" id="sendButton" disabled>Send</button>
-      </div>
-    </div>
-  </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Bonae Ineza. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Bonaeineza31" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/bonae-gisubizo-82b8492b6" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
 </body>
 </html>
