@@ -1,18 +1,36 @@
-function toggleMenu() {
-    const menu = document.querySelector('.nav-links'); // You were missing the '.' for class selector
-    menu.classList.toggle('mobile');  // We'll toggle 'mobile' class instead of 'active'
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuLinks = document.querySelectorAll('.nav-links a');
-    menuLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        const menu = document.querySelector('.nav-links');
-        if (menu.classList.contains('mobile')) {
-          menu.classList.remove('mobile');
-        }
-      });
-    });
-  });
+// function toggleMenu() {
+//     const menu = document.querySelector('.nav-links'); // You were missing the '.' for class selector
+//     menu.classList.toggle('mobile');  // We'll toggle 'mobile' class instead of 'active'
+//   }
+//   document.addEventListener('DOMContentLoaded', function() {
+//     const menuLinks = document.querySelectorAll('.nav-links a');
+//     menuLinks.forEach(link => {
+//       link.addEventListener('click', function() {
+//         const menu = document.querySelector('.nav-links');
+//         if (menu.classList.contains('mobile')) {
+//           menu.classList.remove('mobile');
+//         }
+//       });
+//     });
+//   });
+
+
+  function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target) && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+});
 
   let chatOpen = false;
 let emailCollected = false;
