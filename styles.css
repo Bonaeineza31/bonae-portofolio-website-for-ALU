@@ -1,4 +1,4 @@
-/* Education Section */
+/* Style for the education Section */
 .education {
     padding: 100px 5%;
     background: #fff;
@@ -60,7 +60,7 @@
   }
   
   
-  /* Projects Section */
+  /* Style for the projects Section */
   #projects {
     padding: 80px 20px;
     background-color:  #f9f9f9;
@@ -172,7 +172,7 @@
     font-size: 0.85rem;
   }
   
-  /* Contact Section */
+  /*  Style for the contact Section */
   .contact {
     padding: 8rem 5%;
     background: #fff;
@@ -220,7 +220,7 @@
     resize: vertical;
   }
   
-  /* Buttons */
+  /*  Style for the buttons in the home */
   .btn {
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -250,7 +250,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
-  /* Footer */
+  /* Style for the Footer */
   .footer {
     background: #2d2e32;
     color: #fff;
