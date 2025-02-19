@@ -450,7 +450,7 @@
   }
   
   /* Tablet Responsive */
-  @media screen, (min-width: 769px) and (max-width: 1024px) {
+  @media  (min-width: 769px) and (max-width: 1024px) {
     .hero {
       padding: 8rem 4rem 4rem;
     }
